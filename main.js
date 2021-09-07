@@ -163,3 +163,27 @@
 
     // if brand__samp no value -> NaN `The advertising from undefined is awesome`
     // with value -> 3 `The advertising from undefined is awesome`
+
+
+/** BOOLEANS & COMPARISON */
+    // BOOLEANS
+    console.log(true, false, 'true', 'false');
+
+    let sunglasses = ['Rayban', 'Vans'];
+    console.log(sunglasses.includes('Rayban'));
+    console.log(sunglasses.includes('Water'));
+
+    // COMPARISON
+    let my__age = 26;
+    let my__name = 'Cristian';
+
+    // Age
+    console.log(my__age == 25);
+    console.log(my__age != 24);
+    console.log(my__age > 26);
+    console.log(my__age < 25);
+
+    // Name
+    console.log(my__name == 'Cristian');
+    console.log(my__name != 'Cristian');
+    console.log(my__name > 'Cristian');
