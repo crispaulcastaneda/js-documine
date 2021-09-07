@@ -121,3 +121,45 @@
     htm__post.innerHTML = root__html;
 
 /** ARRAYS */
+
+    // order list of values. Called index.
+    let parts__person = ["hands", "eyes", "nose", "lips"];
+    console.log(parts__person);
+    parts__person[2] = 'ears';
+
+    let random__stuffs = ["Teddy Bear", "Laptop", 1234, 3.14, true];
+    console.log(random__stuffs);
+
+    // Array Methods
+    let global__arr = ["Cars", "Fans", "Boxes"];
+    console.log(global__arr);
+
+    // var.join();
+    console.log(global__arr.join("Bottle"));
+
+    //indexOf();
+    console.log(global__arr.indexOf("Cars")); // if unidentified -1 means nothing.
+
+    // concat() - does not change the existing arrays but returns a new array, containing the values of the joined array.
+    let global__arr2 = ["Cats", "AC", "Plastics"];
+    console.log(global__arr2.concat(global__arr));
+
+    // push() - push new item to the selective array. It alter the original method, called destructive value.
+    console.log(global__arr2.push("Drawer")); // 4
+
+    // pop() - removes the last element.
+    console.log(global__arr2.pop());
+
+    // shift() - removes the 0th item in array.
+    console.log(global__arr2.shift());
+
+/** NULL & UNDEFINED */
+
+    // Null -> no value at all
+    // Undefined -> no value assign
+
+    let brand__samp;
+    console.log(brand__samp + 3, `The advertising from ${brand__samp} is awesome`);
+
+    // if brand__samp no value -> NaN `The advertising from undefined is awesome`
+    // with value -> 3 `The advertising from undefined is awesome`
