@@ -166,6 +166,7 @@
 
 
 /** BOOLEANS & COMPARISON */
+console.log('******* BOOLEANS & COMPARISON *******');
     // BOOLEANS
     console.log(true, false, 'true', 'false');
 
@@ -187,3 +188,19 @@
     console.log(my__name == 'Cristian');
     console.log(my__name != 'Cristian');
     console.log(my__name > 'Cristian');
+
+/** Loose vs Strict Comparison */
+console.log('******* LOOSE VS STRICT *******');
+    let yearly = 2021;
+
+    // Loose (different types can still be equal)
+    console.log(yearly == 2021);
+    console.log(yearly != 2021);
+    console.log(yearly == '2021');
+    console.log(yearly != 2021);
+
+    // Strict (different types cant be equal) -> Strict should always use.
+    console.log(yearly === 2021);
+    console.log(yearly !== 2021);
+    console.log(yearly === '2021');
+    console.log(yearly === 2021);
