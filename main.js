@@ -204,3 +204,17 @@ console.log('******* LOOSE VS STRICT *******');
     console.log(yearly !== 2021);
     console.log(yearly === '2021');
     console.log(yearly === 2021);
+
+/** TYPE CONVERSION */
+    let id__id = '001';
+
+    id__id = Number(id__id);
+    console.log(id__id + 1);
+    console.log(typeof id__id);
+
+    // let result = Number('hello');
+    // let result = String(50);
+    let result = Boolean('0'); // when 0 it declare as false. but when '0' true. String with its content and has length is true.
+    
+
+    console.log(result, typeof result);
