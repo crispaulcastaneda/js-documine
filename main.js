@@ -50,13 +50,54 @@
     // }
 
     console.log("************** if/else statement ****************");
-    const admin__email = prompt('Enter email: ');
-    const user__password = prompt('Enter password: ');
 
-    const def__email = 'test@email.com';
+    // const admin__email = prompt('Enter email: ');
+    // const user__password = prompt('Enter password: ');
 
-    if (admin__email === def__email && user__password.length >= 8) {
-        console.log('You may login');
+    // const def__email = 'test@email.com';
+
+    // if (admin__email === def__email && user__password.length >= 8) {
+    //     console.log('You may login');
+    // } else {
+    //     console.log("Sorry, no account found");
+    // }
+
+    console.log("************** Logical Operators ****************");
+    const set__of__fruits = ["Mango","Apple","Pineapple"];
+    const person__per__fruits = [1,2, 4, 3, 6];
+
+    if (set__of__fruits.length >= 2 && person__per__fruits.length <= 5) {
+        console.log('Let the party begin.');
+    } else if (set__of__fruits.length <= 2 || person__per__fruits.length <= 2) {
+        console.log("Waiting for other piece");
     } else {
-        console.log("Sorry, no account found");
+        console.log("Good Game");
+    }
+
+    console.log("************** Logical NOT ****************");
+    // Logical NOT is simple as !true -> meaning it's false.
+
+    let logical__usr = false;
+
+    if (!logical__usr) {
+        console.log('Result is: ' + !logical__usr);
+    } else if (logical__usr) {
+        console.log('The container is declared ' + logical__usr);
+    } else {
+        console.log('End of Logical NOT');
+    }
+
+    console.log("************** Break and Continue ****************");
+    let score = [3.00, 2.75, 2.50, 2.25, 2.00, 1.75, 1.50, 1.25, 1.00];
+
+    for(let i = 0; i < score.length; i++) {
+        if(score[i] === 2.75) {
+            continue;
+        }
+    }
+
+    console.log("Score: " + score[i]);
+
+    if(score[i] >= 1.25) {
+        console.log('Congrats you made a higher grade');
     }
