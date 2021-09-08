@@ -1,7 +1,7 @@
 /** Control Flow */
     // Use conditional statements for checking conditions.
     // for loops
-
+    console.log("***************** for loop *******************");
     // for (initialization variable; condition (t/f); final expression)
     for (let i = 0; i < 5; i++) {
         console.log('In loop ' + i);
@@ -15,6 +15,7 @@
     }
 
     // while loop
+    console.log("***************** While loop *******************");
     const wh__names = ['Paul', 'Oli', 'Harley'];
     let i = 0;
 
@@ -26,3 +27,16 @@
         console.log(wh__names[i]);
         i++;
     }
+
+    console.log("***************** do while loop *******************");
+
+    // do while loops
+    let a = 0;
+
+    do {
+        console.log('val of a is ' + a);
+        a++;
+    } while(a < 5);
+
+    console.log("***************** if statement *******************");
+    
