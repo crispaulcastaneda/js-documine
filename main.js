@@ -101,3 +101,28 @@
     if(score[i] >= 1.25) {
         console.log('Congrats you made a higher grade');
     }
+
+    console.log("************** Switch Statements ****************");
+    const grade = 'E';
+
+    switch(grade) {
+        case 50:
+            console.log('You got an A');
+            break;
+        case 'B':
+            console.log('You got B');
+            break;
+        case 'C':
+            console.log('You got C');
+            break;
+        case 'D':
+            console.log('You got D');
+            break;
+        case 'E':
+            console.log('You got E');
+            break;
+        default:
+            console.log('Not a valid grade');
+    }
+
+    console.log("************** Switch Statements ****************");
