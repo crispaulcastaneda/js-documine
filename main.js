@@ -51,16 +51,16 @@
 
     console.log("************** if/else statement ****************");
 
-    // const admin__email = prompt('Enter email: ');
-    // const user__password = prompt('Enter password: ');
+    const admin__email = prompt('Enter email: ');
+    const user__password = prompt('Enter password: ');
 
-    // const def__email = 'test@email.com';
+    const def__email = 'test@email.com';
 
-    // if (admin__email === def__email && user__password.length >= 8) {
-    //     console.log('You may login');
-    // } else {
-    //     console.log("Sorry, no account found");
-    // }
+    if (admin__email === def__email && user__password.length >= 8) {
+        console.log('You may login');
+    } else {
+        console.log("Sorry, no account found");
+    }
 
     console.log("************** Logical Operators ****************");
     const set__of__fruits = ["Mango","Apple","Pineapple"];
@@ -125,4 +125,15 @@
             console.log('Not a valid grade');
     }
 
-    console.log("************** Switch Statements ****************");
+    console.log("********** variables and block scope **********");
+    // using let for redefining into global and local scope.
+    let age = 26;
+
+    if (true) {
+        // local scope - code block
+        let age = 25;
+        // age = 25; -> meaning even the outside of scope will declare the local scope.
+        console.log('Inside of age ', age);
+    }
+
+    console.log('Outside of age ', age);
