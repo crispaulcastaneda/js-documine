@@ -113,4 +113,4 @@
 
     // display to html
     ul.innerHTML = html;
-    console.log(html);
+    console.log(html); // display to console
