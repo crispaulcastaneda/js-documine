@@ -46,7 +46,6 @@
 /** Arrow Functions */
     console.log("****** Arrow Functions ******");
     const display__names = ['Mark Zuckerberg ', ' Bill Gates'];
-
     const set__names = (year, technologies) => {
         return  `Year ${year} and technology ${technologies} by ${display__names}`;
     }
@@ -66,6 +65,52 @@
         }
         return total;
     }
-
     console.log(bill([10, 15, 30], .12));
-    // the arguments of products should be in index.
+    // the arguments of products[i] should be in index.
+
+/** Functions vs Methods */
+    console.log('****** Functions vs Methods ******');
+
+    // functions -> block of code to do something that can be invoke and run
+    const le__greet = () => 'hello';
+    const le__greet2 = le__greet();
+    console.log(le__greet2);
+
+    // methods -> can be invoke using dot notation
+    // value.methodName()
+
+    const naming = 'paul';
+
+    const result__name = naming.toUpperCase();
+    console.log(result__name);
+
+/** foreach methods and callbacks */
+// A normal functions that pass to another function to invoke an arguments
+    console.log('****** Methods and callbacks ******');
+    // callbacks & foreach
+    let bday__boy = ['Hey, its your birthday!', 'Cook some food'];
+    // function
+    const mawi = (purpose, index) => {
+        console.log(`${index} Well ${purpose}`);
+    }
+    // callback function
+    bday__boy.forEach(mawi);
+
+
+/** Callback function in actions */
+//
+    console.log('*** Callback function in actions ***');
+    // get id from index
+    const ul = document.querySelector('#cb_action');
+    const sf_char = ["Ryu", "Ken", "Chun-li", "Bison", "Blanca"];
+
+    // html template to callback function
+    let html = '';
+    sf_char.forEach(person => {
+        // create html template
+        html += `<li style="color: #111;"> ${person} </li>`
+    });
+
+    // display to html
+    ul.innerHTML = html;
+    console.log(html);
