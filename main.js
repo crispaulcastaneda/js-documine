@@ -76,30 +76,3 @@
         },
     };
     congtv.work_vlogs();
-
-    // callback function
-    // Create an alert / greeting for a user
-    const user__prompt = (name) => {
-        alert('Hello ' + name);
-    }
-    // create a callback to get the name from user__prompt
-    const get__name = (user__callback) => {
-        let name = prompt('Please enter your name: ');
-        user__callback(name);
-    }
-    get__name(user__prompt);
-
-
-    // create a list of array.
-    const set__arr = (arr) => {
-        arr = ['Mango', 'Apple', 'Dogs', 'Cats'];
-    }
-
-    const get__arr = (arr__value) => {
-        let x;
-        console.log(`The fruits are set in an array and they are`);
-        for (x = 0; x < arr__value.length; x++) {
-            console.log(set__arr[x]);
-        }
-    }
-    get__arr(set__arr);
